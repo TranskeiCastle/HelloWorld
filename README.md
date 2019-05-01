@@ -19,4 +19,4 @@ public static void main(String[] args) {
 [点击前往谷歌](https://www.google.com)
 
 
-![图片不见了](https://github.com/TranskeiCastle/hello-world/blob/master/boot.jpg)
+![图片不见了](https://github.com/TranskeiCastle/HelloWorld/blob/master/boot.jpg)
