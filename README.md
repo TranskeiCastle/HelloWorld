@@ -12,7 +12,7 @@ public static void main(String[] args) {
         System.out.println("Hello World");
     }
 ```
-<!--两个空格标识换行-->
+<!--两个空格表示换行-->
 > 桃花坞里桃花庵，桃花庵下桃花仙；桃花仙人种桃树，又摘桃花卖酒钱。  
 > 酒醒只在花前坐，酒醉还来花下眠；半醒半醉日复日，花落花开年复年。  
 
