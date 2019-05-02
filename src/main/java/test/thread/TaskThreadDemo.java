@@ -45,7 +45,6 @@ class PrintChar implements Runnable {
 					thread4.join();
 			}
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
