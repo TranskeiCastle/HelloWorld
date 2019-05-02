@@ -11,6 +11,8 @@ import java.time.MonthDay;
 import java.time.Year;
 import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalAdjuster;
+import java.time.temporal.TemporalAdjusters;
 
 import org.junit.Test;
 
@@ -173,5 +175,15 @@ public class DateDemo {
         // 修改已有对象
         MonthDay monthDay3 = monthDay.with(Month.MAY).withDayOfMonth(20);
         System.out.println("设置为5月20号: " + monthDay2 + "  " + monthDay3);
+        
+        
+        /**
+         * 本月第一天，最后一天
+         */
+        LocalDate today = LocalDate.now();
+        LocalDate kssj = today.with(TemporalAdjusters.firstDayOfMonth());
+        LocalDate jssj = today.with(TemporalAdjusters.lastDayOfMonth());
+        System.out.println(kssj);
+        System.out.println(jssj);
     }
 }
