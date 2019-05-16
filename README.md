@@ -27,4 +27,5 @@ JUnit 注解支持参数的，一个是 timeout，另一个是 throws，可以�
 亏我以前写测试方法的时候都使用 main<br>
 JUnit @Test注解要求方法签名必须是 public void 的，在 Eclipse 里面当一个类包含多个测试用例的时候，<br>
 右键 -> Run as JUnit Test，会执行所有用例；<br>
-双击方法名，选中方法，右键 -> Run as JUnit Test，只会执行选中的这个用例；控制台看得出来，Runs: 2/2 Errors:0 Failures: 0这样。
+双击方法名，选中方法，右键 -> Run as JUnit Test，只会执行选中的这个用例；<br>
+控制台看得出来，Runs: 2/2 Errors:0 Failures: 0这样。
