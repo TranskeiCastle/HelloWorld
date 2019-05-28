@@ -61,7 +61,7 @@ public class ArrayTest {
 
     /**
      * for-each，如果不在删除操作之后执行break，下次就会发现集合被修改过了，报错java.util.ConcurrentModificationException
-     * 
+     * for-each的底层也是转化成iterator
      */
     @Test
     public void removeByForEach() {
@@ -93,7 +93,7 @@ public class ArrayTest {
             npcList.add(temp);
         }
 
-        // for-each
+        // iterator
         Iterator<NPC> it = npcList.iterator();
         while (it.hasNext()) {
             Integer age = it.next().getAge();
