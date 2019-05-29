@@ -122,7 +122,24 @@ public class ArrayTest {
         list.forEach(System.out::println);
     }
 
-    
+    /**
+     * 迭代器remove()方法虽然方便，但仍有需要注意的地方，要用此法删除元素的前提是该 List
+     * 的实现类的iterator()方法返回的Iterator实现类支持remove()方法，否则会报
+     * java.lang.UnsupportedOperationException异常，常用的ArrayList的Iterator支持remove()方法，但下面这种情况下就会有问题
+     */
+    @Test
+    public void removeByIter() {
+        Integer[] arr = { 1, 2, 3, 4, 5 };
+        List<Integer> list = Arrays.asList(arr);
+        Iterator<Integer> iter = list.iterator();
+        while (iter.hasNext()) {
+            Integer item = iter.next();
+            if (item == 2) {
+                iter.remove();
+            }
+        }
+    }
+
 }
 
 class NPC {
