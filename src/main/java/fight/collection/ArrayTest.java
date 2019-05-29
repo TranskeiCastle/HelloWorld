@@ -103,6 +103,26 @@ public class ArrayTest {
         }
         npcList.forEach(System.out::println);
     }
+
+    /**
+     * 删除时传递对象还是下标
+     */
+    @Test
+    public void removeByIntegerOrInt() {
+        List<Integer> list = new ArrayList<>(8);
+        list.add(5);
+        list.add(10);
+        list.add(10);
+        list.add(25);
+        list.add(35);
+        // 传“10”会报错，数组越界
+        list.remove(0);
+        list.remove(new Integer(10));
+        // 打印内容：10、25、35
+        list.forEach(System.out::println);
+    }
+
+    
 }
 
 class NPC {
