@@ -9,9 +9,8 @@ public class BoundTest {
         // 反编译的结果是 b = (byte)(b + 1);
         b += 1;
         // 编译错误，b + 1 是整型，不允许赋值给一个 byte
-        // b = b + 1;
+        b = b + 1;
         System.out.println(b);
-        System.out.println(Integer.MAX_VALUE);
     }
 
     @Test
