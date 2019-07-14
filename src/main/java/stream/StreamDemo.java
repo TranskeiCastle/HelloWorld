@@ -142,7 +142,7 @@ public class StreamDemo {
     }
 
     /**
-     * 字符处理，Joining函数接受三个参数，分别表示允（用以分隔元素）、前缀和后缀
+     * 字符处理，Joining函数接受三个参数，分别表示分隔符（用以分隔多个元素）、前缀和后缀
      */
     @Test
     public void streamDemo8() {
