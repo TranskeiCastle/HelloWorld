@@ -7,6 +7,8 @@ package fight.bound;
  *
  */
 public class YY extends java.util.Date {
+    private static final long serialVersionUID = 6507861937604410614L;
+
     public static void main(String[] args) {
         new YY().yy();
     }
