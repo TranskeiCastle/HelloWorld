@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cn.edu.bnuz</groupId>
-	<artifactId>Demo</artifactId>
+	<artifactId>HelloWorld</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
@@ -12,7 +12,7 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
-			<scope></scope>
+			<scope>compile</scope>
 		</dependency>
 
 		<!-- jsoup -->
