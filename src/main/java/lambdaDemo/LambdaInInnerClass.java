@@ -5,7 +5,7 @@ import org.junit.Test;
 public class LambdaInInnerClass {
 
     /**
-     * Lambda 表达式简化内部类写法
+     * Lambda 表达式简化内部类写法.
      */
     @Test
     public void myTest() {
